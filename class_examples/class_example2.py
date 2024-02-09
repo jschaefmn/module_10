@@ -5,12 +5,15 @@ class Person:
     # self.age = input_age
     self._age = input_age # Private attribute
     
+  # Name getter
   def get_name(self):
     return self._name
   
+  # Age getter
   def get_age(self):
     return int(self._age)
   
+  # Age setter
   def set_age(self, new_age):
     if type(new_age) != int or new_age < 0:
       print('Must be positive integer')
