@@ -15,10 +15,16 @@ class Character:
     
   def receive_attack(self, damage):
     block = self._armor.calculate_defense()
+    print(f"{self.name}'s {self._armor.name}")
     damage -= block
     self._health -= damage
     if self._health <= 0:
       print(f'{self._name} has lost')
+      
+  def play():
+    is_alive = True
+    while is_alive:
+      
     
     
 class Hero(Character):
